@@ -7,7 +7,7 @@ const AdminDashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/api/v1/ad/admin-dashboard");
+        const response = await axios.get("https://social-app-4d6e.onrender.com/api/v1/ad/admin-dashboard");
         setUsers(response.data.data); // Assuming API returns data in `.data`
       } catch (error) {
         alert("Error fetching data: " + error.message);

@@ -27,7 +27,7 @@ const UserForm = () => {
     }
 
     try {
-      await axios.post("http://localhost:8080/api/v1/us/user", data, {
+      await axios.post("https://social-app-4d6e.onrender.com/api/v1/us/user", data, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       alert("Data submitted successfully!");
